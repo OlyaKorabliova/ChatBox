@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/Time.css"/>
+    <link rel="stylesheet" href="styles/Create-message.css"/>
+    <link rel="stylesheet" href="styles/Chat-header.css"/>
+    <link rel="stylesheet" href="styles/Layout.css"/>
+    <link rel="stylesheet" href="styles/Chat-field.css"/>
+    <link rel="stylesheet" href="styles/Message.css"/>
+    <title>ChatBox Facebook</title>
+</head>
+<body class="Layout">
+<main class="Layout__chat-box">
+    <header class="Chat-header">
+        <div class="Chat-header__activity"></div>
+        <span class="Chat-header__user-name">Kristaps Elsins</span>
+        <span class="Chat-header__icon Chat-header__icon_close"></span>
+        <span class="Chat-header__icon Chat-header__icon_settings"></span>
+        <span class="Chat-header__icon Chat-header__icon_video"></span>
+        <span class="Chat-header__icon Chat-header__icon_add"></span>
+    </header>
+    <div class="Chat-field">
+        <div class="Messages Messages_friend">
+            <img class="Messages__pic" title="Olya" src="http://res.cloudinary.com/dtnnkdylh/image/upload/c_scale,h_28,w_28/v1516464458/21731146_1089079511228035_2310466288900761483_n_cggboe.jpg" alt="Olya"/>
+            <span class="Messages__message Messages__message_friend">Yo, Can you update views?</span>
+        </div>
+        <span class="Time">FRI 11:30AM</span>
+        <div class="Messages Messages_friend">
+            <img class="Messages__pic" title="Olya" src="http://res.cloudinary.com/dtnnkdylh/image/upload/c_scale,h_28,w_28/v1516464458/21731146_1089079511228035_2310466288900761483_n_cggboe.jpg" alt="Olya"/>
+            <span class="Messages__message Messages__message_friend">I can't see updated views yet</span>
+        </div>
+        <div class="Messages Messages_own">
+            <div class="Messages__message Messages__message_own Messages__message_own_top">Hi, as I noted in Email last week - I am on vacation.</div>
+            <div class="Messages__message Messages__message_own Messages__message_own_bottom">I will be back next week</div>
+        </div>
+        <div class="Messages Messages_friend">
+            <img class="Messages__pic" title="Olya" src="http://res.cloudinary.com/dtnnkdylh/image/upload/c_scale,h_28,w_28/v1516464458/21731146_1089079511228035_2310466288900761483_n_cggboe.jpg" alt="Olya"/>
+            <span class="Messages__message Messages__message_friend Messages__message_friend_top">Ahh sorry, missed that!</span>
+            <span class="Messages__message Messages__message_friend Messages__message_friend_bottom">Let's talk next week</span>
+        </div>
+
+    </div>
+    <div class="Create-message">
+        <input class="Create-message__input" placeholder="Type a message...">
+        <span class="Create-message__icon Create-message__icon_picture"></span>
+        <span class="Create-message__icon Create-message__icon_gif"></span>
+        <span class="Create-message__icon Create-message__icon_smile"></span>
+        <span class="Create-message__icon Create-message__icon_calendar"></span>
+        <span class="Create-message__icon Create-message__icon_camera"></span>
+    </div>
+</main>
+</body>
+</html>

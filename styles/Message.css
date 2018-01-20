@@ -1,0 +1,127 @@
+.Message_friend {
+  float: left;
+  margin: 8px 0 8px 16px;
+  clear: both;
+}
+.Message_own {
+  float: right;
+  clear: both;
+  margin: 8px 16px 8px 0;
+}
+.Message__friend-pic {
+  border-radius: 50%;
+  position: absolute;
+  left: 16px;
+}
+.Message__friend-message {
+  background-color: #f3f3f3;
+  max-width: 160px;
+  word-wrap: break-word;
+  padding: 5px 12px 6px 12px;
+  text-align: left;
+  color: #353535;
+  border-radius: 15px;
+  margin-bottom: 1px;
+  float: left;
+  clear: both;
+  margin-left: 36px;
+}
+.Message__friend-message_top {
+  border-radius: 15px 15px 15px 0;
+}
+.Message__friend-message_middle {
+  border-radius: 0 15px 15px 0;
+}
+.Message__friend-message_bottom {
+  border-radius: 0 15px 15px 15px;
+}
+.Message__own-message {
+  background-color: #2979ff;
+  float: right;
+  clear: both;
+  max-width: 167px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding: 5px 12px 6px 12px;
+  text-align: left;
+  color: #fff;
+  border-radius: 15px;
+}
+.Message__own-message_top {
+  border-radius: 15px 15px 0 15px;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+.Message__own-message_middle {
+  border-radius: 15px 0 0 15px;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+.Message__own-message_bottom {
+  border-radius: 15px 0 15px 15px;
+  margin-top: 0;
+}
+.Messages_friend {
+  float: left;
+  margin: 8px 0 8px 16px;
+  clear: both;
+  border: 1px solid;
+}
+.Messages_own {
+  float: right;
+  clear: both;
+  margin: 8px 16px 8px 0;
+  border: 1px solid;
+}
+.Messages__pic {
+  border-radius: 50%;
+  position: absolute;
+  left: 16px;
+}
+.Messages__message {
+  padding: 5px 12px 6px 12px;
+  clear: both;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  border-radius: 15px;
+}
+.Messages__message_friend {
+  background-color: #f3f3f3;
+  color: #353535;
+  float: left;
+  margin-left: 36px;
+}
+.Messages__message_friend_top {
+  border-radius: 15px 15px 15px 0;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+.Messages__message_friend_middle {
+  border-radius: 0 15px 15px 0;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+.Messages__message_friend_bottom {
+  border-radius: 0 15px 15px 15px;
+  margin-top: 0;
+}
+.Messages__message_own {
+  background-color: #2979ff;
+  float: right;
+  max-width: 167px;
+  color: #fff;
+}
+.Messages__message_own_top {
+  border-radius: 15px 15px 0 15px;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+.Messages__message_own_middle {
+  border-radius: 15px 0 0 15px;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+.Messages__message_own_bottom {
+  border-radius: 15px 0 15px 15px;
+  margin-top: 0;
+}
