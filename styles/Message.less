@@ -1,67 +1,65 @@
 .Messages {
+  clear: both;
   &_friend {
-    float: left;
     margin: 8px 0 8px 16px;
-    clear: both;
+    float: left;
+    width: 60%;
+    .Messages__text {
+      background-color: #f3f3f3;
+      color: #353535;
+      margin-left: 36px;
+      float: left;
+      clear: left;
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+
+      &:first-of-type {
+        border-top-left-radius: 15px;
+      }
+      &:last-of-type {
+        border-bottom-left-radius: 15px;
+      }
+      &:only-of-type {
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+
+    }
   }
   &_own {
-    float: right;
-    clear: both;
     margin: 8px 16px 8px 0;
-  }
+    float: right;
+    width: 60%;
+    .Messages__text {
+      background-color: #2979ff;
+      color: #fff;
+      float: right;
+      clear: right;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
 
+      &:first-of-type {
+        border-top-right-radius: 15px;
+      }
+      &:last-of-type {
+        border-bottom-right-radius: 15px;
+      }
+      &:only-of-type {
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    }
+  }
   &__pic {
     border-radius: 50%;
     position: absolute;
     left: 16px;
   }
-
-  &__message {
+  &__text {
+    display: block;
     padding: 5px 12px 6px 12px;
-    clear: both;
+    margin-bottom: 1px;
     box-sizing: border-box;
     word-wrap: break-word;
-    border-radius: 15px;
-    &_friend {
-      background-color: #f3f3f3;
-      color: #353535;
-      float: left;
-      margin-left: 36px;
-      &_top {
-        border-radius: 15px 15px 15px 0;
-        margin-top: 0;
-        margin-bottom: 1px;
-      }
-      &_middle {
-        border-radius: 0 15px 15px 0;
-        margin-top: 0;
-        margin-bottom: 1px;
-      }
-      &_bottom {
-        border-radius: 0 15px 15px 15px;
-        margin-top: 0;
-      }
-    }
-    &_own {
-      background-color: #2979ff;
-      float: right;
-      max-width: 167px;
-      color: #fff;
-      &_top {
-        border-radius: 15px 15px 0 15px;
-        margin-top: 0;
-        margin-bottom: 1px;
-      }
-      &_middle {
-        border-radius: 15px 0 0 15px;
-        margin-top: 0;
-        margin-bottom: 1px;
-      }
-      &_bottom {
-        border-radius: 15px 0 15px 15px;
-        margin-top: 0;
-      }
-    }
   }
-
 }

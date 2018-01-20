@@ -21,6 +21,8 @@
 .Chat-header__icon {
   float: right;
   display: inline-block;
+  width: 12px;
+  height: 12px;
 }
 .Chat-header__icon_close {
   width: 18px;
@@ -28,20 +30,15 @@
   background: url("../images/Close.svg") no-repeat;
 }
 .Chat-header__icon_settings {
-  width: 12px;
-  height: 12px;
   margin: 3px 9px 3px 0;
   background: url("../images/Cog.svg") no-repeat;
 }
 .Chat-header__icon_video {
-  width: 12px;
   height: 8px;
   margin: 5px 15px 5px 0;
   background: url("../images/Video.svg") no-repeat;
 }
 .Chat-header__icon_add {
-  width: 12px;
-  height: 12px;
   margin: 3px 14px 3px 0;
   background: url("../images/Plus.svg") no-repeat;
 }

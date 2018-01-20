@@ -1,62 +1,62 @@
-.Messages_friend {
-  float: left;
-  margin: 8px 0 8px 16px;
+.Messages {
   clear: both;
 }
+.Messages_friend {
+  margin: 8px 0 8px 16px;
+  float: left;
+  width: 60%;
+}
+.Messages_friend .Messages__text {
+  background-color: #f3f3f3;
+  color: #353535;
+  margin-left: 36px;
+  float: left;
+  clear: left;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.Messages_friend .Messages__text:first-of-type {
+  border-top-left-radius: 15px;
+}
+.Messages_friend .Messages__text:last-of-type {
+  border-bottom-left-radius: 15px;
+}
+.Messages_friend .Messages__text:only-of-type {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
 .Messages_own {
-  float: right;
-  clear: both;
   margin: 8px 16px 8px 0;
+  float: right;
+  width: 60%;
+}
+.Messages_own .Messages__text {
+  background-color: #2979ff;
+  color: #fff;
+  float: right;
+  clear: right;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.Messages_own .Messages__text:first-of-type {
+  border-top-right-radius: 15px;
+}
+.Messages_own .Messages__text:last-of-type {
+  border-bottom-right-radius: 15px;
+}
+.Messages_own .Messages__text:only-of-type {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .Messages__pic {
   border-radius: 50%;
   position: absolute;
   left: 16px;
 }
-.Messages__message {
+.Messages__text {
+  display: block;
   padding: 5px 12px 6px 12px;
-  clear: both;
+  margin-bottom: 1px;
   box-sizing: border-box;
   word-wrap: break-word;
-  border-radius: 15px;
-}
-.Messages__message_friend {
-  background-color: #f3f3f3;
-  color: #353535;
-  float: left;
-  margin-left: 36px;
-}
-.Messages__message_friend_top {
-  border-radius: 15px 15px 15px 0;
-  margin-top: 0;
-  margin-bottom: 1px;
-}
-.Messages__message_friend_middle {
-  border-radius: 0 15px 15px 0;
-  margin-top: 0;
-  margin-bottom: 1px;
-}
-.Messages__message_friend_bottom {
-  border-radius: 0 15px 15px 15px;
-  margin-top: 0;
-}
-.Messages__message_own {
-  background-color: #2979ff;
-  float: right;
-  max-width: 167px;
-  color: #fff;
-}
-.Messages__message_own_top {
-  border-radius: 15px 15px 0 15px;
-  margin-top: 0;
-  margin-bottom: 1px;
-}
-.Messages__message_own_middle {
-  border-radius: 15px 0 0 15px;
-  margin-top: 0;
-  margin-bottom: 1px;
-}
-.Messages__message_own_bottom {
-  border-radius: 15px 0 15px 15px;
-  margin-top: 0;
 }
