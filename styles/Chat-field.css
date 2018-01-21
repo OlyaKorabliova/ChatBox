@@ -1,4 +1,6 @@
 .Chat-field {
   overflow: auto;
   padding: 8px 0;
+  height: calc(100vh - 95px);
+  box-sizing: border-box;
 }

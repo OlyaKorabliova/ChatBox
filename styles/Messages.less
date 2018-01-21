@@ -1,35 +1,47 @@
 .Messages {
   clear: both;
-  &_friend {
-    margin: 8px 0 8px 16px;
+  &__pic {
+    border-radius: 50%;
     float: left;
-    width: 60%;
+  }
+  &__text {
+    max-width: 60vw;
+    padding: 5px 12px 6px 12px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
+  &_friend {
+    float: left;
+    margin: 8px 32px 8px 16px;
     .Messages__text {
       background-color: #f3f3f3;
       color: #353535;
-      margin-left: 36px;
       float: left;
-      clear: left;
+      margin-left: 36px;
       border-bottom-right-radius: 15px;
       border-top-right-radius: 15px;
 
       &:first-of-type {
         border-top-left-radius: 15px;
-      }
-      &:last-of-type {
-        border-bottom-left-radius: 15px;
+        margin-left: 8px;
+        clear: none;
       }
       &:only-of-type {
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
+        margin-left: 8px;
+        clear: none;
       }
-
+      &:last-of-type {
+        border-bottom-left-radius: 15px;
+      }
     }
   }
   &_own {
-    margin: 8px 16px 8px 0;
     float: right;
-    width: 60%;
+    margin: 8px 16px 8px 32px;
     .Messages__text {
       background-color: #2979ff;
       color: #fff;
@@ -37,29 +49,17 @@
       clear: right;
       border-bottom-left-radius: 15px;
       border-top-left-radius: 15px;
-
       &:first-of-type {
         border-top-right-radius: 15px;
-      }
-      &:last-of-type {
-        border-bottom-right-radius: 15px;
       }
       &:only-of-type {
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
       }
+      &:last-of-type {
+        border-bottom-right-radius: 15px;
+      }
     }
   }
-  &__pic {
-    border-radius: 50%;
-    position: absolute;
-    left: 16px;
-  }
-  &__text {
-    display: block;
-    padding: 5px 12px 6px 12px;
-    margin-bottom: 1px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
+
 }
