@@ -1,0 +1,67 @@
+@import "Vars";
+
+.Chat {
+  &__header {
+    background-color: #2979ff;
+    border-radius: 4px 4px 0 0;
+    height: @header-h;
+    padding: 7px;
+    box-sizing: border-box;
+  }
+  &__body {
+    height: @container-h - @header-h - @footer-h;
+    overflow: auto;
+  }
+  &__user-name {
+    color: #fff;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    float: left;
+  }
+  &__activity-indicator {
+    width: 6px;
+    height: 6px;
+    background-color: #69f0ae;
+    border-radius: 50%;
+    float: left;
+    margin: 6px 8px 6px 5px;
+  }
+  &__option {
+    float: right;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: none;
+    box-sizing: border-box;
+    margin: 3px 9px 3px 0;
+    padding: 0;
+    &_close {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      background: url("../images/Close.svg") no-repeat;
+    }
+    &_settings {
+      background: url("../images/Cog.svg") no-repeat;
+    }
+    &_video {
+      height: 10px;
+      margin: 5px 15px 5px 0;
+      background: url("../images/Video.svg") no-repeat;
+    }
+    &_add {
+      margin-right: 14px;
+      background: url("../images/Plus.svg") no-repeat;
+    }
+  }
+  &__time {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 9px;
+    color: #828282;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}

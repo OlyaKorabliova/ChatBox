@@ -5,52 +5,99 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/Time.css"/>
+    <link rel="stylesheet" href="styles/Chat.css"/>
     <link rel="stylesheet" href="styles/Create-message.css"/>
-    <link rel="stylesheet" href="styles/Chat-header.css"/>
     <link rel="stylesheet" href="styles/Layout.css"/>
-    <link rel="stylesheet" href="styles/Chat-field.css"/>
     <link rel="stylesheet" href="styles/Messages.css"/>
     <title>ChatBox Facebook</title>
 </head>
 <body class="Layout">
-<main class="Layout__chat-box">
-    <header class="Chat-header">
-        <div class="Chat-header__activity"></div>
-        <span class="Chat-header__user-name">Kristaps Elsins</span>
-        <span class="Chat-header__icon Chat-header__icon_close"></span>
-        <span class="Chat-header__icon Chat-header__icon_settings"></span>
-        <span class="Chat-header__icon Chat-header__icon_video"></span>
-        <span class="Chat-header__icon Chat-header__icon_add"></span>
-    </header>
-    <div class="Chat-field">
-        <div class="Messages Messages_friend">
-            <img class="Messages__pic" title="Olya" src="http://res.cloudinary.com/dtnnkdylh/image/upload/c_scale,h_28,w_28/v1516464458/21731146_1089079511228035_2310466288900761483_n_cggboe.jpg" alt="Olya"/>
-            <span class="Messages__text">Yo, Can you update views?</span>
+<section class="Layout__chat-box">
+    <div class="Chat">
+        <header class="Chat__header">
+            <h4 class="Chat__user-name">
+                Kristaps Elsins
+                <span class="Chat__activity-indicator"></span>
+            </h4>
+            <button
+                title="Close"
+                class="Chat__option Chat__option_close">
+                <!--Close-->
+            </button>
+            <button
+                title="Settings"
+                class="Chat__option Chat__option_settings">
+                <!--Settings-->
+            </button>
+            <button
+                title="Start video chat"
+                class="Chat__option Chat__option_video">
+                <!--Start video chat-->
+            </button>
+            <button
+                title="Add friend to the chat"
+                class="Chat__option Chat__option_add">
+                <!--Add friend to the chat-->
+            </button>
+        </header>
+        <div class="Chat__body">
+            <div class="Messages Messages_friend">
+                <img class="Messages__friend-avatar"
+                    title="Olya"
+                    alt="Olya"
+                    src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28,c_fill/100003779896474.jpg"/>
+                <span class="Messages__text">Yo, Can you update views?</span>
+            </div>
+            <time class="Chat__time">FRI 11:30AM</time>
+            <div class="Messages Messages_friend">
+                <img class="Messages__friend-avatar"
+                     title="Olya"
+                     alt="Olya"
+                     src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28,c_fill/100003779896474.jpg"/>
+                <span class="Messages__text">I can't see updated views yet</span>
+            </div>
+            <div class="Messages Messages_own">
+                <span class="Messages__text">Hi, as I noted in Email last week - I am on vacation.</span>
+                <span class="Messages__text">I will be back next week</span>
+            </div>
+            <div class="Messages Messages_friend">
+                <img class="Messages__friend-avatar"
+                     title="Olya"
+                     alt="Olya"
+                     src="https://res.cloudinary.com/demo/image/facebook/w_28,h_28,c_fill/100003779896474.jpg"/>
+                <span class="Messages__text">Ahh sorry, missed that!</span>
+                <span class="Messages__text">Let's talk next week</span>
+            </div>
         </div>
-        <span class="Time">FRI 11:30AM</span>
-        <div class="Messages Messages_friend">
-            <img class="Messages__pic" title="Olya" src="http://res.cloudinary.com/dtnnkdylh/image/upload/c_scale,h_28,w_28/v1516464458/21731146_1089079511228035_2310466288900761483_n_cggboe.jpg" alt="Olya"/>
-            <span class="Messages__text">I can't see updated views yet</span>
-        </div>
-        <div class="Messages Messages_own">
-            <span class="Messages__text">Hi, as I noted in Email last week - I am on vacation.</span>
-            <span class="Messages__text">I will be back next week</span>
-        </div>
-        <div class="Messages Messages_friend">
-            <img class="Messages__pic" title="Olya" src="http://res.cloudinary.com/dtnnkdylh/image/upload/c_scale,h_28,w_28/v1516464458/21731146_1089079511228035_2310466288900761483_n_cggboe.jpg" alt="Olya"/>
-            <span class="Messages__text">Ahh sorry, missed that!</span>
-            <span class="Messages__text">Let's talk next week</span>
-        </div>
+        <form class="Create-message">
+            <input class="Create-message__input" placeholder="Type a message...">
+            <button
+                title="Insert a picture from the computer"
+                class="Create-message__button Create-message__button_picture">
+                <!--Insert a picture from the computer-->
+            </button>
+            <button
+                title="Insert a gif"
+                class="Create-message__button Create-message__button_gif">
+                <!--Insert a gif-->
+            </button>
+            <button
+                title="Insert an emoji"
+                class="Create-message__button Create-message__button_smile">
+                <!--Insert an emoji -->
+            </button>
+            <button
+                title="Schedule event"
+                class="Create-message__button Create-message__button_calendar">
+                <!--Schedule event-->
+            </button>
+            <button
+                title="Record a video message"
+                class="Create-message__button Create-message__button_camera">
+                <!--Record a video message-->
+            </button>
+        </form>
     </div>
-    <footer class="Create-message">
-        <input class="Create-message__input" placeholder="Type a message...">
-        <span class="Create-message__icon Create-message__icon_picture"></span>
-        <span class="Create-message__icon Create-message__icon_gif"></span>
-        <span class="Create-message__icon Create-message__icon_smile"></span>
-        <span class="Create-message__icon Create-message__icon_calendar"></span>
-        <span class="Create-message__icon Create-message__icon_camera"></span>
-    </footer>
-</main>
+</section>
 </body>
 </html>

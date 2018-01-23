@@ -1,7 +1,7 @@
 .Messages {
   clear: both;
 }
-.Messages__pic {
+.Messages__friend-avatar {
   border-radius: 50%;
   float: left;
 }
@@ -20,20 +20,18 @@
 .Messages_friend .Messages__text {
   background-color: #f3f3f3;
   color: #353535;
-  float: left;
   margin-left: 36px;
+  display: block;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
 .Messages_friend .Messages__text:first-of-type {
   border-top-left-radius: 15px;
-  margin-left: 8px;
   clear: none;
 }
 .Messages_friend .Messages__text:only-of-type {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
-  margin-left: 8px;
   clear: none;
 }
 .Messages_friend .Messages__text:last-of-type {
